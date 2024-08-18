@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Storage Retriever</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 12px;
+            background-color: #18181B;
+        }
+
+        .storage-item {
+            padding: 8px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            border-radius: 4px;
+
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .storage-item:hover{
+            background-color: #ffffff54;
+            color: #18181B;
+        }
+
+        .storage-item span{
+            max-width: calc(100% - 24px);
+            width: calc(100% - 28px);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .storage-item svg{
+            width: 16px;
+            height: 16px;  
+            flex-shrink: 0;
+        }
+
+        .container {
+            width: 400px;
+            background-color: #18181B;
+            border-radius: 8px;
+            padding: 12px;
+            color: #ffffff;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 6px 0px, rgba(0, 0, 0, 0.1) 0px 8px 15px 0px, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+
+        .content-wrapper {
+            padding-bottom: 10px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        h3 {
+            font-size: 14px;
+            line-height: 1;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .session-storage{
+            margin-top: 10px;
+        }
+
+        .no-local-storage .local-storage,
+        .no-session-storage .session-storage,
+        .no-local-storage hr {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container" id="cv-container">
+        <article class="content-wrapper local-storage">
+            <h3>Local Storage</h3>
+            <div id="localStorageContent" class="content"></div>
+        </article>
+        <hr>
+        <article class="content-wrapper session-storage">
+            <h3>Session Storage</h3>
+            <div id="sessionStorageContent" class="content"></div>
+        </article>
+
+    </main>
+
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
