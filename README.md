@@ -2,6 +2,8 @@
 
 **ClipVault** is a simple and efficient Google Chrome extension designed to retrieve and copy content stored in local storage or session storage. With a single click, you can instantly copy any stored content to your clipboard. This extension is localized to the current page, ensuring that you always have access to the most relevant data.
 
+<img width="471" alt="Screenshot 2024-08-19 at 12 05 53 PM" src="https://github.com/user-attachments/assets/d8ca84b4-a9da-4977-8380-d515f2966733">
+
 ## Features
 
 - **Instant Retrieval:** Fetches and displays all keys and values from both local storage and session storage for the current page.
@@ -23,5 +25,3 @@
 3. The extension will display all items stored in local storage and session storage for the current page.
 4. Click on any item to copy its content to the clipboard.
 5. A notification will appear confirming the content has been copied.
-
-<img width="471" alt="Screenshot 2024-08-19 at 12 05 53 PM" src="https://github.com/user-attachments/assets/d8ca84b4-a9da-4977-8380-d515f2966733">
